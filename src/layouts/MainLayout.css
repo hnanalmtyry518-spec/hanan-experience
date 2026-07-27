@@ -1,0 +1,40 @@
+.layout {
+  min-height: 100vh;
+  background: #050816;
+  color: white;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 120px 0 80px;
+}
+@media (max-width:768px){
+
+.layout{
+
+padding:20px;
+
+}
+
+.page-title{
+
+font-size:34px;
+
+text-align:center;
+
+}
+
+.page-content{
+
+padding:20px;
+
+}
+
+.container{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,18 @@
+:root {
+  --background: #050816;
+  --surface: #111827;
+
+  --primary: #4F46E5;
+  --secondary: #22D3EE;
+
+  --text: #F8FAFC;
+  --text-muted: #94A3B8;
+
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  --radius: 16px;
+
+  --transition: 0.3s ease;
+}

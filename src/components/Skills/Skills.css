@@ -1,0 +1,63 @@
+.skills{
+    margin-top:80px;
+}
+
+.skills-title{
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.skill{
+    margin-bottom:28px;
+}
+
+.skill-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+}
+
+.skill-track{
+
+    width:100%;
+
+    height:10px;
+
+    background:#1E293B;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.skill-fill{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#38BDF8,#22C55E);
+
+    border-radius:999px;
+
+}
+@media (max-width:768px){
+
+.skills-title{
+
+text-align:center;
+
+}
+
+.skill-info{
+
+font-size:14px;
+
+}
+
+}
