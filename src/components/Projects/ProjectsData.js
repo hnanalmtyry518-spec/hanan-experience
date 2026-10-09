@@ -75,6 +75,31 @@ const projects = [
       "/projects/medical-medical-center.jpeg",
       "/projects/medical-requests-management.jpeg",
       "/projects/medical-warehouse-management.jpeg"
+        ]
+  },
+
+  {
+    id: 3,
+    title: "Inspection Performance Dashboard",
+    emoji: "📊",
+    status: "Completed",
+
+    stack: [
+      "Power BI",
+      "Microsoft Excel",
+      "DAX",
+      "Data Analysis"
+    ],
+
+    description:
+      "A Power BI dashboard built using simulated inspection data to monitor violations, track processed cases, and analyze monthly performance. The dashboard reports 133 total violations, 104 processed violations, and a 78.2% processing rate. This project demonstrates KPI calculation, data visualization, and operational performance reporting. Dataset is simulated for training purposes.",
+
+    demo: "/projects/Inspection_Performance_Dashboard.pdf",
+    video: "#",
+    github: "#",
+
+    images: [
+      "/projects/inspection-dashboard.png"
     ]
   }
 ];
