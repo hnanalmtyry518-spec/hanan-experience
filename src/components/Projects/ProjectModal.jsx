@@ -52,6 +52,16 @@ function ProjectModal({ project, onClose }) {
             🚀 Launch Demo
           </a>
 )}
+{project.report && (
+  <a
+    href={project.report}
+    target="_blank"
+    rel="noreferrer"
+    className="demo-button"
+  >
+    📄 View Project Report
+  </a>
+)}
 
           {project.video !== "#" && (
             <a
