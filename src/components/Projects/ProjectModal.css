@@ -1,58 +1,84 @@
-.modal-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.75);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
-.modal{
-  width:min(700px,90%);
-  background:#111827;
-  color:white;
-  border-radius:20px;
-  padding:35px;
-  position:relative;
+.modal {
+  width: min(700px, 90%);
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+
+  background: #111827;
+  color: white;
+  border-radius: 20px;
+  padding: 35px;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.close-button{
-  position:absolute;
-  top:20px;
-  right:20px;
-  border:none;
-  background:none;
-  color:white;
-  font-size:22px;
-  cursor:pointer;
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.modal-description{
-  margin:25px 0;
-  line-height:1.8;
-  color:#CBD5E1;
+.modal-description {
+  margin: 25px 0;
+  line-height: 1.8;
+  color: #CBD5E1;
 }
 
-.modal-stack{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+.modal-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.modal-stack span{
-  background:#1E293B;
-  padding:8px 14px;
-  border-radius:999px;
+.modal-stack span {
+  background: #1E293B;
+  padding: 8px 14px;
+  border-radius: 999px;
 }
-.modal-buttons{
 
-    display:flex;
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
 
-    gap:15px;
+@media (max-width: 600px) {
+  .modal-overlay {
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
 
-    margin-top:30px;
+  .modal {
+    width: 92%;
+    max-height: calc(100dvh - 24px);
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
 
-    flex-wrap:wrap;
-
+  .modal-buttons {
+    gap: 10px;
+  }
 }
